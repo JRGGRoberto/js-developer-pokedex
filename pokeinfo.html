@@ -20,34 +20,21 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
-</head>
+</head>s
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
-        ↩️
+        <h1 id="nomeTitle" class="nomeTitle">Who is this Pokemon!?</h1>
+        <a href="/" target="_blank" rel="Back">↩️</a>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
 
     </section>
-
-    <!-- Nosso JS -->
-    <!--<script src="/assets/js/main.js"></script> -->
-    <script>
-        const searchParams = new URLSearchParams(window.location.search);
-
-        if(!searchParams.has('numb')){
-           window.location.replace("index.html");
-        }
-        for (const param of searchParams) {
-            console.log(param);
-          }
-          
-
-
-    </script>
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/detail-poke-api.js"></script>
+    <script src="/assets/js/detail-main.js"></script>
 </body>
 
 </html>
